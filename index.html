@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praxis</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
-    <main>
-        <input type="button" value="button" id="button">
-    </main>
+    <div class="container">
+        <div class="row">
+            <main id="result-view" class="col-8"></main>
+        </div>
+        <div>
+            <input type="button" class="btn btn-primary" value="Refresh" id="refresh">
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
     <!-- models -->
-    <script src="src/models/Doktors.js"></script>
     <script src="src/models/Pets.js"></script>
-    <script src="src/models/Manager.js"></script>
     <script src="src/models/Line.js"></script>
+    <script src="src/models/Doktors.js"></script>
+    <script src="src/models/Manager.js"></script>
+    <script src="src/models/Calculation.js"></script>
     <!-- views -->
-    <script src="Utility.js"></script>
-    <script src="app.js"></script>
+    <script src="src/views/Result.js"></script>
+
+    <script src="src/Utility.js"></script>
+    <script src="src/app.js"></script>
 </body>
+
 </html>

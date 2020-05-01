@@ -1,3 +1,6 @@
+/**
+ * Evcil hayvanlari olusturan class.
+ */
 class Pets {
     constructor(pOwnerName, pSpecies, pAge, pTreatment, pFee) {
         this.ownerName = pOwnerName;
